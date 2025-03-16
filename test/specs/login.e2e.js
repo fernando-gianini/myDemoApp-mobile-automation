@@ -15,10 +15,6 @@ describe('My Login application', () => {
         await loginScreen.fillLoginForm(userData.usernameFail.username, userData.usernameFail.password)
         await expect($(loginScreen.errorMessage)).toHaveText("Provided credentials do not match any user in this service.")
        })
-    it.skip('should login with login success', async () => {
-        await menuScreen.accessLoginScreen()
-        await loginScreen.fillLoginForm(userData.userSuccess.username, userData.userSuccess.password)
-       })
     it.skip('should login with username no data', async () => {
         await menuScreen.accessLoginScreen()
         await loginScreen.fillLoginForm(userData.loginNoData.username, userData.userSuccess.password)
@@ -29,12 +25,11 @@ describe('My Login application', () => {
         await loginScreen.fillLoginForm(userData.userSuccess.username, userData.loginNoData.password)
         await expect($(loginScreen.noDataPassword)).toHaveText("Password is required")
        })
-    it('should login with login and logout', async () => {
+    it('should login with login success and logout', async () => {
         await menuScreen.accessLoginScreen()
         await loginScreen.fillLoginForm(userData.userSuccess.username, userData.userSuccess.password)
         await menuScreen.loggingOut()
         await loginScreen.loggingOut()
-        
        })
    
 })
