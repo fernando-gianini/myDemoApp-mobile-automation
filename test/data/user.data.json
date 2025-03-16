@@ -10,7 +10,14 @@
     },
 
     "usernameFail" : {
-        "username": "wrong_username",
+        "username": "usernamefail@example.com",
         "password": "10203040"
+    },
+
+    "loginNoData" : {
+        "username": "",
+        "password": ""
     }
+
+
 }

@@ -56,7 +56,7 @@ export const config = {
     "appium:deviceName": "Pixel 5 API 30 (R)",
     "appium:app": "app/Android-MyDemoAppRN.1.3.0.build-244.apk",
     "appium:automationName": "UIAutomator2",
-    "appium:shouldTerminateApp": false,
+    "appium:shouldTerminateApp": true,
     }],
 
     //
