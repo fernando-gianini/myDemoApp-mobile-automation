@@ -138,6 +138,15 @@ export const config = {
         timeout: 60000
     },
 
+    suites: {
+        loginTest: ['./test/specs/login.e2e.js'], //run test - $ npx wdio wdio.conf.js --suite loginTest
+        navigationTest: ['./test/specs/navigation.e2e.js'] //run test $ npx wdio wdio.conf.js --suite navigationTest
+    },
+    beforeCommand: async function () {
+        await browser.pause(100); // Pausa de 500ms antes de cada comando
+    }
+
+
     //
     // =====
     // Hooks
@@ -203,6 +212,7 @@ export const config = {
      * Hook that gets executed before the suite starts
      * @param {object} suite suite details
      */
+      
     // beforeSuite: function (suite) {
     // },
     /**
