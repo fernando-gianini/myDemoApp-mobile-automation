@@ -1,8 +1,8 @@
 class LoginScreen {
     constructor() {
-        this.usernameInput = "~Username input field"
-        this.passwordInput = "~Password input field"
-        this.loginButton = "~Login button"
+        this.usernameInput = "//android.widget.EditText[@content-desc='Username input field']"
+        this.passwordInput = "//android.widget.EditText[@content-desc='Password input field']"
+        this.loginButton = "//android.view.ViewGroup[@content-desc='Login button']"
         this.errorMessage = "//android.view.ViewGroup[@content-desc='generic-error-message']/android.widget.TextView"
         this.noDataUsername = "//android.widget.TextView[@text='Username is required']"
         this.noDataPassword= "//android.widget.TextView[@text='Password is required']"

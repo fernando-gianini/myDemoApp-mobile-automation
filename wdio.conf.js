@@ -140,10 +140,11 @@ export const config = {
 
     suites: {
         loginTest: ['./test/specs/login.e2e.js'], //run test - $ npx wdio wdio.conf.js --suite loginTest
-        navigationTest: ['./test/specs/navigation.e2e.js'] //run test $ npx wdio wdio.conf.js --suite navigationTest
+        navigationTest: ['./test/specs/navigation.e2e.js'], //run test $ npx wdio wdio.conf.js --suite navigationTest
+        productTest: ['./test/specs/product.e2e.js'] //run test $ npx wdio wdio.conf.js --suite productTest
     },
     beforeCommand: async function () {
-        await browser.pause(100); // Pausa de 500ms antes de cada comando
+        await browser.pause(0o0); // Pausa de 500ms antes de cada comando
     }
 
 

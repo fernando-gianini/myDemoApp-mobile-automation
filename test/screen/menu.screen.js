@@ -14,6 +14,7 @@ class MenuScreen {
         this.apiCalllsButton = "//android.widget.TextView[@text='Api Calls']"
         this.sauceBotVideoButton = "//android.widget.TextView[@text='Sauce Bot Video']"
         
+        
     }
 
 async accessLoginScreen() {
