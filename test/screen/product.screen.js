@@ -53,7 +53,7 @@ async filtreAscendingPrice() {
     const primaryPrice = parseFloat((await $(this.primaryAscendingPrice).getText()).replace('$', ''));
     const secondaryPrice = parseFloat((await $(this.secondaryAscendingPrice).getText()).replace('$', ''));
     expect(primaryPrice).toBeLessThan(secondaryPrice);
-    }
+    } 
 
  async filtreDescendingName() {
     await $(this.filterButton).click();
